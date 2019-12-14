@@ -2,6 +2,12 @@ pipeline {
     agent any
     stages {
 		
+				//Code starts for stage Clean
+        stage('Clean') {
+            steps {
+                sh 'mvn clean'
+            }
+        }
 		// *****ALL CODE TO BE ADDED BELOW THIS COMMENT*****
 				
 		//
